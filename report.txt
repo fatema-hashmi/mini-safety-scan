@@ -1,0 +1,4 @@
+Mini Safety Scan — 2025-08-20 22:03:16
+Host: 127.0.0.1
+
+No open ports found in the tested set.
