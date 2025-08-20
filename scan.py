@@ -1,6 +1,4 @@
-# scan.py — super simple port scan with tips (beginner-friendly)
-# Usage:
-#   python scan.py --host 127.0.0.1 --top 30 --out report.txt
+
 
 import socket
 import time
@@ -122,3 +120,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
