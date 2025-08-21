@@ -1,4 +1,4 @@
-- # 🧰 Mini Safety Scan
+- #  Mini Safety Scan
 
 A tiny Python script that scans common ports on a host you own and prints plain-English risks + fixes.  
 
