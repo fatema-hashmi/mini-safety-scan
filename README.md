@@ -1,32 +1,28 @@
-# 🧰 Mini Safety Scan
+- # 🧰 Mini Safety Scan
 
-A tiny Python script that scans **common ports** on a host you own and prints **plain-English risks + fixes**.  
----
+A tiny Python script that scans common ports on a host you own and prints plain-English risks + fixes.  
 
-## 🚀 How to Run
+- ## 🚀 How to Run (Windows)
+  •  python -m venv .venv
+  
+  •  .\.venv\Scripts\activate
+  
+  •  python scan.py --host 127.0.0.1 --top 20 --out report.txt
 
-**Windows**
-```bat
-python -m venv .venv
-.\.venv\Scripts\activate
-python scan.py --host 127.0.0.1 --top 20 --out report.txt
+- ## 🚀 How to Run (Mac/Linux)
+   • python3 -m venv .venv
+  
+   • source .venv/bin/activate
+  
+   • python3 scan.py --host 127.0.0.1 --top 20 --out report.txt
 
-Mac/Linux
+Open **report.txt** to see the results.  
 
-python3 -m venv .venv
-source .venv/bin/activate
-python3 scan.py --host 127.0.0.1 --top 20 --out report.txt
+- ## 🔍 What It Checks
+• A small set of widely-used ports (web, SSH, RDP, DB, mail…)  
+• For each open port, it explains:  
+   - Why the service exists  
+   - Basic risk (e.g., clear-text auth, brute-force)  
+   - Simple fix (e.g., disable legacy service, use HTTPS, restrict access)  
 
-
-Open report.txt to see the results.
-
-
-🔍 WHAT IT CHECKS
-
-A small set of widely-used ports (web, SSH, RDP, DB, mail…).
-For each open port, it explains:
-Why the service exists
-Basic risk (e.g., clear-text auth, brute-force)
-Simple fix (e.g., disable legacy service, use HTTPS, restrict access)
-
-No external packages required — just Python.
+No external packages required — just Python 
